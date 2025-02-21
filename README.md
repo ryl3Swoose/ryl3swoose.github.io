@@ -1,2 +1,2 @@
-# ryl3gol.github.io
-A public website for publishing a small test website to share with friends. Part of an ongoing personal project.
+# swoosing.net
+Joke company website for the joke fake company swoosing inc.
