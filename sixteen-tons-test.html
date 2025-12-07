@@ -9,8 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Sixteen Tons.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Sixteen Tons" startnode="27" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="76CE9485-1690-4902-B8EB-78FC7B3B5EC8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">var song = new Audio('/audio/SixteenTonsInstrumental.mp3');
-song.play();</script><tw-tag name="SFX" color="purple"></tw-tag><tw-tag name="footer" color="red"></tw-tag><tw-passagedata pid="1" name="A New Life" tags="" position="600,200" size="100,100">You&#39;ve finally done it, you&#39;ve gone out on your own to make it big. You traveled to West Virginia to get a job working the land, you even got a good enough deal where your boss would give a roof over your head while you were workin&#39; for him. 
+<tw-storydata name="Sixteen Tons" startnode="1" creator="Twine" creator-version="2.10.0" format="Harlowe" format-version="3.3.9" ifid="76CE9485-1690-4902-B8EB-78FC7B3B5EC8" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="SFX" color="purple"></tw-tag><tw-tag name="footer" color="red"></tw-tag><tw-passagedata pid="1" name="A New Life" tags="" position="600,200" size="100,100">You&#39;ve finally done it, you&#39;ve gone out on your own to make it big. You traveled to West Virginia to get a job working the land, you even got a good enough deal where your boss would give a roof over your head while you were workin&#39; for him. 
 There were a lotta job openin&#39;s, on account of the strikes. All ya had to do was sign a little paper the boss said just meant you wouldn&#39;t join the union. You don&#39;t quite know what all that means, but a man&#39;s gotta work for bread don&#39;t he?
 There&#39;s a store in town, pretty near your house, and there&#39;s some essentials you need to pick up.
 [[Go to the Store]]
@@ -34,7 +33,9 @@ There&#39;s a store in town, pretty near your house, and there&#39;s some essent
 [[Scrip?]]</tw-passagedata><tw-passagedata pid="3" name="Cash, please" tags="" position="600,400" size="100,100">&quot;Sure &#39;nuf. What do you need?&quot;
 You have $$Money 
 (if: $Boots is true)[~~Boots~~](else:)[ [[Boots]] ]
-(if: $Pickaxe is true)[~~Pickaxe~~](else:)[ [[Pickaxe]] ](if: $Boots is true and $Pickaxe is true)[&quot;Those&#39;ll do ya good, come back when you got some scrip and we can getcha whatcha need. Now go on &#39;n git, there&#39;s work for you to do. Plenty of it.&quot;
+(if: $Pickaxe is true)[~~Pickaxe~~](else:)[ [[Pickaxe]] ]
+(if: $Boots is true and $Pickaxe is true)[
+&quot;Those&#39;ll do ya good, come back when you got some scrip and we can getcha whatcha need. Now go on &#39;n git, there&#39;s work for you to do. Plenty of it.&quot;
 [[Goodbye.]] ]</tw-passagedata><tw-passagedata pid="4" name="Scrip?" tags="" position="800,200" size="100,100">&quot;Guess you wouldn&#39;t know. You&#39;ll get scrip every workday, [[strawboss]]&#39;ll hand you the coins and you&#39;ll be able to pay with it. If you haven&#39;t started work you won&#39;t have none. Best get diggin&#39;.&quot;
 
 [[Back-&gt;Go to the Store]]</tw-passagedata><tw-passagedata pid="5" name="strawboss" tags="" position="900,400" size="100,100">&quot;Damn, you a detective? Ain&#39;t nobody asked so many questions since that fella down the road took a mule-kick to the head.&quot;
@@ -59,7 +60,8 @@ You have $$Money left.
 (if: $Money is 0)[That went fast, guess I&#39;d best get to work.]
 [[Back-&gt;Cash, please]]</tw-passagedata><tw-passagedata pid="11" name="Nevermind Pickaxe" tags="" position="100,700" size="100,100">&quot;Son, are you plannin&#39; on diggin&#39; through the rock with God&#39;s own two hands? If you don&#39;t got a pick you won&#39;t be diggin&#39; and you&#39;ll be headin&#39; on out damn soon. Best rethink your decision.&quot;
 
-[[Back-&gt;Pickaxe]]</tw-passagedata><tw-passagedata pid="12" name="Goodbye." tags="" position="300,1000" size="100,100">[[Wake Up]]</tw-passagedata><tw-passagedata pid="13" name="hal.tracks" tags="SFX" position="300,0" size="100,100">SixteenTonsInstrumental: ./Audio/SixteenTonsInstrumental.mp3</tw-passagedata><tw-passagedata pid="14" name="Wake Up" tags="" position="300,1125" size="100,100">You wake up before the roosters next door do. The sun is barely peeking over the hills to the East and there&#39;s still sleep in your eyes, but you grab your shiny new pickaxe, lace up your boots, and head to the mine. 
+[[Back-&gt;Pickaxe]]</tw-passagedata><tw-passagedata pid="12" name="Goodbye." tags="" position="300,1000" size="100,100">You make your way to your new place and rest your head. It&#39;s been a long road to get here but you can finally make somethin&#39; outta yourself. You&#39;d better get some rest, you&#39;ve got a long day ahead of you tomorrow.
+[[Get Some Rest-&gt;Wake Up]]</tw-passagedata><tw-passagedata pid="13" name="hal.tracks" tags="SFX" position="300,0" size="100,100">SixteenTonsInstrumental: ./Audio/SixteenTonsInstrumental.mp3</tw-passagedata><tw-passagedata pid="14" name="Wake Up" tags="" position="300,1125" size="100,100">You wake up before the roosters next door do. The sun is barely peeking over the hills to the East and there&#39;s still sleep in your eyes, but you grab your shiny new pickaxe, lace up your boots, and head to the mine. 
 It&#39;s a short walk from your house and you get to meet some of the other miners. Hank is a bigger guy, all callouses and grit. Says he&#39;s been working the mine for comin&#39; on five years. Davey is small, young too. His front teeth stick out like the beavers out west and he looks like a stiff breeze would send him down the road. 
 Then there&#39;s Mr. McMahon, the strawboss for the mine. He&#39;s an older fella with a moustache that makes him look like a walrus and a build to match. He spots you as you line up at the mine entrance. 
 &quot;You there, new here?&quot;
@@ -144,8 +146,8 @@ Don&#39;t have anything to eat. The hunger pangs will just help keep you awake.
 ]</tw-passagedata><tw-passagedata pid="27" name="Professor Disclaimer" tags="" position="600,0" size="100,100">Hi Professor! 
 Before you start I&#39;m going to give you the option to skip a couple of the more tedious parts of the game, increasing the rate at which time passes and the rate you mine. If you want that, click [[here-&gt;ezmode]]. If you want the original (much more tedious) vision, click [[here instead-&gt;A New Life]].
 (set:$Professor_Mode to 1)</tw-passagedata><tw-passagedata pid="28" name="ezmode" tags="" position="825,625" size="100,100">(set:$Professor_Mode to 10)
-[[Start-&gt;A New Life]]</tw-passagedata><tw-passagedata pid="29" name="header" tags="header" position="300,125" size="100,100">&lt;audio controls src=&quot;/audio/SixteenTonsInstrumental.mp3&quot; autoplay&gt;&lt;/audio&gt;
-</tw-passagedata></tw-storydata>
+[[Start-&gt;A New Life]]</tw-passagedata><tw-passagedata pid="29" name="header" tags="header" position="300,125" size="100,100">&lt;audio controls src=&quot;/audio/SixteenTonsInstrumental.mp3&quot; &gt;&lt;/audio&gt;[
+]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
